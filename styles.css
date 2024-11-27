@@ -1,0 +1,335 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('horsewallpaper.jpg')  center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /* Allows vertical stacking of elements */
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    /*justify-content: space-between; /* תוכן ראשי למעלה ותחתון למטה */
+    
+   
+}
+
+/* Logo styles */
+.logo {
+    width: 110px; /* Set the width of the circle */
+    height: 110px; /* Set the height of the circle */
+    background: url('stamlogo1.png') no-repeat center center; /* Add the logo image */
+    background-size: cover; /* Ensure the image fits inside the circle */
+    border-radius: 50%; /* Make it a circle */
+    border: 3px solid white; /* Optional: Add a white border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    margin-top: 18px; /* Add some space from the top of the page */
+    position: relative; /* Enable positioning */
+    z-index: 10; /* Ensure the logo is above other content */
+}
+
+/* Content container */
+.container {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 1px;
+    padding: 5px;
+    background: rgba(6, 6, 6, 0.4); /* Black background with 80% opacity */
+    border: 2px solid #ddd; /* Solid border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow with slight transparency */
+    margin-top: 10px; /* Space below the logo */
+}
+
+
+/* Rectangle structure */
+.rectangle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Name styles */
+.name {
+    
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: goldenrod;
+}
+
+/* Whiteners (now links) */
+.whitener {
+    display: block;
+    width: 90%;
+    height: 90px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+/* Unique backgrounds for each whitener */
+.whitener-1 {
+    background-image: url('hotdrinks.jpg');
+}
+
+.whitener-2 {
+    background-image: url('breakfast.jpg');
+}
+
+.whitener-3 {
+    background-image: url('desert.jpg');
+}
+
+.whitener-4 {
+    background-image: url('colddrink.jpg');
+}
+
+/* Hover effect */
+.whitener:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Card container for 2-column, 6-row layout */
+.card-container {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 1px auto 0 auto; /* ריווח מלמעלה + מרכז אופקי */
+    
+}
+
+/* Card styles */
+.card {
+    border: 2px solid rgb(249, 248, 246); /* צבע המסגרת */
+    border-radius: 8px; /* פינות מעוגלות */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* צל */
+    overflow: auto; /* מונע גלילה חיצונית */
+    background: url('backgroundcard1.jpg') no-repeat center fixed; /* רקע כללי לכרטיס */
+    background-size: cover; /* מתאים את הרקע לגודל הכרטיס */
+    
+    
+}
+
+.card-img-top {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* מתאים את התמונה */
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+    /*background: rgba(0, 0, 0, 0.8); /* רקע כהה לטקסט */
+    color: white; /* צבע טקסט */
+    border-radius: 0 0 8px 8px; /* פינות מעוגלות רק בחלק התחתון */
+   
+   
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: rgb(249, 248, 244); /* צבע טקסט בהיר */
+   
+}
+
+
+
+/* כפתור חזרה */
+.back-button {
+    position: absolute;
+    top: 10px; /* מרחק מהחלק העליון */
+    left: 10px; /* מרחק מצד ימין */
+    background: black; /* צבע רקע שחור */
+    padding: 10px 20px; /* רווח פנימי */
+    border-radius: 5px; /* פינות מעוגלות */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* צל */
+}
+
+.back-button a {
+    color: white; /* צבע טקסט */
+    text-decoration: none; /* הסרת הקו התחתון */
+    font-size: 1rem; /* גודל טקסט */
+    font-weight: bold;
+}
+
+
+
+
+/* דף 1 */
+body.page-1 {
+    background: url('cardbackground.jpg') center center fixed;
+    background-size: cover;
+}
+
+/* דף 2 */
+body.page-2 {
+    background: url('cardbackground.jpg') center center fixed;
+    background-size: cover;
+}
+
+/* דף 3 */
+body.page-3 {
+    background: url('cardbackground.jpg') center center fixed;
+    background-size: cover;
+}
+
+/* דף 4 */
+body.page-4 {
+    background: url('cardbackground.jpg') center center fixed;
+    background-size: cover;
+}
+
+/* עיצוב של קישורי המדיה החברתית */
+/* עיצוב כללי של body */
+/*body {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between; /* תוכן ראשי למעלה ותחתון למטה */
+   /* min-height: 100vh;*/ /* מבטיח שהגובה יכסה את המסך */
+    /*margin: 0;
+}*/
+
+/* עיצוב של קישורי המדיה החברתית */
+.social-links {
+    display: flex;
+    justify-content: center; /* יישור הקישורים למרכז */
+    gap: 20px; /* רווחים בין הקישורים */
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8); /* רקע כהה */
+    position: fixed; /* מיקום קבוע */
+    bottom: 0; /* מקבע את האלמנט לתחתית המסך */
+    left: 0; /* מתחיל מהשמאל */
+    width: 100%; /* מבטיח רוחב מלא */
+    color: white; /* צבע טקסט */
+    text-align: center; /* טקסט מיושר למרכז */
+    box-sizing: border-box; /* כולל padding ברוחב */
+    opacity: 0.8; /* שקיפות קלה */
+    z-index: 10; /* מבטיח שה-social-links יישאר מעל תוכן אחר */
+}
+
+/* עיצוב הקישורים עצמם */
+.social-links a {
+    color: white; /* צבע טקסט */
+    text-decoration: none; /* הסרת קו תחתון */
+    font-size: 1rem; /* גודל טקסט */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px; /* פינות מעוגלות */
+    transition: background 0.3s ease; /* אפקט מעבר */
+}
+
+.social-links a:hover {
+    background: rgba(255, 255, 255, 0.2); /* רקע במעבר עכבר */
+    text-decoration: underline; /* הדגשת קישור */
+}
+
+/* התאמות למסכים קטנים */
+@media (max-width: 768px) {
+    .social-links a {
+        font-size: 0.9rem; /* טקסט קטן יותר במסכים קטנים */
+        padding: 8px 12px; /* רווחים מותאמים */
+    }
+}
+
+@media (max-width: 480px) {
+    .social-links {
+        flex-direction: row; /* מסדר את הקישורים בטור במסכים קטנים מאוד */
+        gap: 10px; /* רווח קטן יותר בין הקישורים */
+    }
+}
+
+/* קונטיינר לכפתור ולמשפט */
+.header-container {
+    
+    display: flex;
+    justify-content: space-between; /* מרחיק בין הכפתור למשפט */
+    align-items: center; /* מיישר אותם אנכית */
+    padding: 10px 20px; /* רווח פנימי */
+    background-color: rgba(244, 225, 225, 0.1); /* רקע קליל */
+    border-bottom: 1px solid #ddd; /* קו תחתון */
+    position: relative;
+}
+
+
+
+/* טקסט המשפט */
+.header-text {
+    color: gold; /* צבע הטקסט */
+    font-size: 1.2rem; /* גודל טקסט */
+    font-weight: bold;
+    margin-top: 55px;
+    padding-left: 25px; /* רווח קטן בין הכפתור למשפט */
+}
+
+.header-text1 {
+    color: gold; /* צבע הטקסט */
+    font-size: 25px; /* גודל טקסט */
+    font-weight: bold;
+    margin-top: 0px;
+    padding-left: 25px; /* רווח קטן בין הכפתור למשפט */
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        flex-direction: column; /* סידור אנכי במסכים קטנים */
+        align-items: flex-start; /* יישור הטקסט והכפתור לשמאל */
+    }
+    .header-text {
+        font-size: 1.5rem; /* טקסט קטן יותר במסכים קטנים */
+        padding-top: 10px; /* רווח בין הכפתור לטקסט */
+    }
+}
+
+
+
+
+/* Responsive styles */
+
+/* עבור מסכים ברוחב של עד 768px */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* שמור על שתי עמודות */
+        gap: 15px; /* רווחים קטנים יותר */
+        padding: 15px; /* צמצום רווח פנימי */
+    }
+    .whitener {
+        height: 120px; /* גובה מתאים למסכים בינוניים */
+    }
+    .name {
+        font-size: 1rem; /* טקסט קטן יותר למסכים בינוניים */
+    }
+}
+
+/* עבור מסכים ברוחב של עד 480px */
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* שמור על שתי עמודות */
+        gap: 10px; /* רווחים קטנים למסכים קטנים */
+        padding: 10px; /* רווח פנימי מצומצם למסכים קטנים */
+    }
+    .whitener {
+        height: 100px; /* גובה קטן יותר למסכים קטנים */
+        width: 120px;
+    }
+    .name {
+        font-size: 0.9rem; /* טקסט קטן יותר למסכים קטנים */
+        text-align: center; /* יישור למרכז */
+    }
+}
+
